@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+int start;
+int final;
+int V[10];
+int n;
+int r1;
+int r2;
+
+
+int maxvalue(int V[10],int start,int final);
+    if(start<=final) {
+    if (start==final){ return V[start];}
+    int m=start+(sfarsit-start)/2;
+    int r1,r2;
+    r1=maxvalue(V,1,m);
+    r2=maxvalue(V,m+1,n);
+    if(r1<r2) {return r2;};
+    return r1;}
+
+
+int main()
+{
+    cout<<"n=";cin>>n;
+    for(int start=1;start<=n;i++)
+    {
+        cout<<"V["<<start<"]=";cin<<V[start];
+
+    }
+    cout<<"maxvalue="<<maxvalue(1,n);
+    return 0;
+}
